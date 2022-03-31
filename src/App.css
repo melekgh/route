@@ -1,0 +1,15 @@
+:root {
+  --gradient: linear-gradient(
+    /* 45deg, */
+    /* #109c6d,
+    #eb5abf,
+    #be113a,
+    #ff9671,
+    #ffc75f,
+    #9c9c10 */
+  );
+}
+body {
+  background: rgb(145, 174, 212);
+  background-image: var(--gradient);
+}
