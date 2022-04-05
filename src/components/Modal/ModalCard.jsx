@@ -7,7 +7,7 @@ import Rating from "@mui/material/Rating";
 import Typography from "@mui/material/Typography";
 import SendIcon from "@mui/icons-material/Send";
 import { useState } from "react";
-import './style.css'
+import "./style.css";
 
 const style = {
   position: "absolute",
@@ -40,13 +40,13 @@ export default function ModalCard({ addCard }) {
 
   const handleSubmit = () => {
     addCard(Card);
-    
   };
   return (
     <div>
       <Fab color="primary" aria-label="add" className="addbtn">
         <AddIcon onClick={handleOpen} />
       </Fab>
+
       <Modal
         open={open}
         onClose={handleClose}

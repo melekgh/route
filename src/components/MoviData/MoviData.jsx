@@ -1,9 +1,11 @@
+import { v4 as uuidv4 } from "uuid";
 const MoviData = [
   {
     image:
       "https://i.egycdn.com/pic/WmFwZndlY21tbWJtbXZOam1vUmN2Y2FtSWx3VEV2dGM.jpg ",
     rating: 4,
     name: "Spider-Man: No Way Home ",
+    trailer: "https://www.youtube.com/embed/pSUAvMp1-5c",
     date: "2021",
     type: "Action | aventure",
     description:

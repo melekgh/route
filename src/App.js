@@ -4,6 +4,8 @@ import { useState } from "react";
 import ModalCard from "./components/Modal/ModalCard";
 import MoviData from "./components/MoviData/MoviData";
 import './App.css'
+import {Routes,Route} from 'react-router-dom'
+import MovieDetails from "./components/Moviedetails/MovieDetails";
 
 function App() {
   const [cardList, setcardList] = useState(MoviData);
@@ -29,11 +31,16 @@ function App() {
         {console.log(cardList)}
       </div>
       <div className="MvCard">
-        <MoviCard
-          cardList={cardList}
-          titleshearch={titleshearch}
-          ratingSearch={ratingSearch}
-        />
+        <Routes>
+<Route path ="/" element={<MoviCard
+            cardList={cardList}
+            titleshearch={titleshearch}
+            ratingSearch={ratingSearch}
+          />}
+/>
+
+        <Route path="/movie" element ={<MovieDetails/> }/>  
+        </Routes>
       </div>
     </div>
   );
